@@ -1,0 +1,115 @@
+.cards{
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows:repeat(1, 1fr); 
+    grid-template-columns: repeat(4,1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+   
+   
+}
+
+.cards .image img{
+    width: 100%;
+   transition: all 2s;
+    display: block;
+    
+    object-fit: cover;
+    cursor: pointer;
+}
+.cards .image > .inner{
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+ transition: all, 2s;
+
+}
+.cards .image:hover .inner{
+    display: block;
+}
+.cards .image .btn{
+    width: 100%;
+}
+
+.card-text{
+    color: #777;
+}
+.btn{
+    background-color:#f1f1f1;
+    color: black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.card-body .price{
+    display: flex;
+    flex-direction: row;
+   
+    gap: 10px;
+    color: #777;
+}
+.card-body .old{
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 918px) {
+    .cards{
+      
+        
+        grid-template-columns: repeat(3,1fr);
+       
+       
+       
+    }
+ 
+    
+}
+@media only screen and (max-width: 747px) {
+    .cards{
+      
+        
+        grid-template-columns: repeat(2,1fr);
+       
+      
+       
+       
+    }
+ 
+    
+}
+@media only screen and (max-width: 484px) {
+    .cards{
+      
+        
+        grid-template-columns: repeat(2,1fr);
+      
+      
+       
+       
+    }
+ 
+    
+}
+@media only screen and (max-width:460px) {
+    .cards{
+      
+        
+        grid-template-columns: repeat(1, 1fr);
+        padding-right: 10px;
+        grid-column-gap: 0px;
+      
+       
+       
+    }
+ 
+    
+}

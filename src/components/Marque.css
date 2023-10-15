@@ -1,0 +1,14 @@
+.top-header{
+    display: flex;
+    justify-content: center;
+    background-color:whitesmoke;
+    padding:6px;
+}
+.top-header > marquee {
+  
+    width: 50%;
+    color: #777;
+}
+.top-header marquee a{
+    color: black;
+}
